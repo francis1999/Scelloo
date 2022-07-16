@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cors());
 
 
-const couponrouter = require('./Routes/couponRoute');
+const couponrouter = require('./routes/couponRoute');
 
 app.get("/", (req, res) => {
     res.send("Welcome to SCELLOO APP");
