@@ -1,9 +1,9 @@
 {
     "development": {
-        "username": "root",
-        "password": "",
+        "username": "b9b6da5f5ce1e8",
+        "password": "bee92be3",
         "database": "scelloo",
-        "host": "127.0.0.1",
+        "host": "us-cdbr-east-06.cleardb.net",
         "dialect": "mysql"
     },
     "test": {
