@@ -5,6 +5,15 @@ module.exports = (sequelize, DataTypes) => {
         couponcode: {
             type: DataTypes.STRING
         },
+        description: {
+            type: DataTypes.STRING
+        },
+        constraints: {
+            type: DataTypes.STRING
+        },
+        is_enabled: {
+            type: DataTypes.STRING
+        },
         discount: {
             type: DataTypes.DOUBLE
         },
