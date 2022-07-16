@@ -2,7 +2,7 @@
     "development": {
         "username": "b9b6da5f5ce1e8",
         "password": "bee92be3",
-        "database": "scelloo",
+        "database": "heroku_8439ef7d3a0651e",
         "host": "us-cdbr-east-06.cleardb.net",
         "dialect": "mysql"
     },
@@ -16,7 +16,7 @@
     "production": {
         "username": "b9b6da5f5ce1e8",
         "password": "bee92be3",
-        "database": "scelloo",
+        "database": "heroku_8439ef7d3a0651e",
         "host": "us-cdbr-east-06.cleardb.net",
         "dialect": "mysql"
     }
