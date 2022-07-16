@@ -2,7 +2,7 @@ const mysql = require('mysql');
 const dbConn = mysql.createConnection({
     host: "us-cdbr-east-06.cleardb.net",
     user: "b9b6da5f5ce1e8",
-    password: "bee92be3.",
+    password: "bee92be3",
     database: "scelloo"
 });
 /* const dbConn = mysql.createConnection({
