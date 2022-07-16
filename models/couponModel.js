@@ -12,7 +12,8 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING
         },
         is_enabled: {
-            type: DataTypes.STRING
+            type: DataTypes.STRING,
+            default:true
         },
         discount: {
             type: DataTypes.DOUBLE
