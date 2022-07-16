@@ -10,13 +10,13 @@ app.use(express.json());
 app.use(cors());
 
 
-
+const couponrouter = require('./Routes/couponRoute');
 
 app.get("/", (req, res) => {
     res.send("Welcome to SCELLOO APP");
 })
 
-
+app.use('/api/coupon', couponrouter);
 
 app.use('/uploads', express.static('uploads'))
 const server=http.createServer(app)
