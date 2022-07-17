@@ -2,8 +2,10 @@ const express = require("express");
 const app = express();
 const db = require("./models");
 const cors = require("cors");
+const dotenv = require("dotenv");
 const port = process.env.PORT || 5000;
 const http=require("http")
+dotenv.config();
 //Routers
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());

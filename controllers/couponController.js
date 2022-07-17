@@ -5,7 +5,7 @@ const { StatusCodes } = require('http-status-codes')
 
 module.exports.addCoupon = async (req, res) => {
   var couponCode = ''
-  var possible = 'abcdefghijklmnopqrstuvwxyz0123456789'
+  var possible = process.env.COUPON_VARIABLE
   for (var i = 0; i < 10; i++) {
     couponCode += possible.charAt(Math.floor(Math.random() * possible.length))
   }
