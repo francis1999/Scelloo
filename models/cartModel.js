@@ -12,6 +12,9 @@ module.exports = (sequelize, DataTypes) => {
         totalprice: {
             type: DataTypes.DOUBLE
         },
+        quantity:{
+            type: DataTypes.DOUBLE
+        }
     })
     Carts.associate = models => {
         Carts.belongsTo(models.Coupons, {

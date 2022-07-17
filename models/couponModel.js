@@ -13,14 +13,21 @@ module.exports = (sequelize, DataTypes) => {
         },
         is_enabled: {
             type: DataTypes.STRING,
-            default:true
+            defaultValue:true
         },
         discount: {
+            type: DataTypes.DOUBLE,
+            defaultValue:false
+        },
+        item: {
             type: DataTypes.DOUBLE
         },
-
-        discountype: {
-            type: DataTypes.STRING
+        percentage: {
+            type: DataTypes.DOUBLE,
+            defaultValue:false
+        },
+        discounttype: {
+            type: DataTypes.DOUBLE,
         },
     })
     return Coupons
