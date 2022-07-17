@@ -8,20 +8,13 @@ module.exports = (sequelize, DataTypes) => {
         price: {
             type: DataTypes.DOUBLE
         },
-
-        totalprice: {
-            type: DataTypes.DOUBLE
-        },
         quantity:{
-            type: DataTypes.DOUBLE
+            type: DataTypes.INTEGER
+        },
+        customername:{
+            type: DataTypes.STRING
         }
+       
     })
-    Carts.associate = models => {
-        Carts.belongsTo(models.Coupons, {
-            foreignkey: {
-                allowNull: false
-            }
-        });
-    }
     return Carts
 }
