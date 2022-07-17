@@ -29,6 +29,7 @@ module.exports = (sequelize, DataTypes) => {
         discounttype: {
             type: DataTypes.DOUBLE,
         },
+
     })
     return Coupons
 }

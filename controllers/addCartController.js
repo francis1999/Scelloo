@@ -1,6 +1,5 @@
 const express = require('express')
 const { Cart } = require('../models/cartModel')
-var couponCode = require('coupon-code')
 const Validator = require('fastest-validator');
 
 module.exports.addCart = async (req, res) => {
@@ -8,6 +7,7 @@ module.exports.addCart = async (req, res) => {
         name: { type: "string", optional: false, empty: false, },
         price: { type: "number", optional: false, empty: false, },
         totalprice: { type: "number", optional: false, empty: false, },
+        quantity: { type: "number", optional: false, empty: false, },
     }
     try {
         const v = new Validator();
@@ -22,6 +22,7 @@ module.exports.addCart = async (req, res) => {
             name: req.body.name,
             price: req.body.price,
             totalprice: req.body.totalprice,
+            quantity: req.body.quantity,
     
         }).then(result => {
             res.status(200).json({
