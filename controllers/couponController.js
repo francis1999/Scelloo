@@ -66,3 +66,24 @@ module.exports.addCoupon = async (req, res) => {
     })
   }
 }
+
+
+module.exports.getAllCoupon=async(req,res)=>{
+    try { 
+        const allCoupons=await Coupons.findAll();
+        if(allCoupons){
+            res.status(StatusCodes.OK).json({
+                count:allCoupons.length,
+                message: 'Coupon List',
+                allCoupons,
+                
+              })
+        }
+    }
+    catch(error){
+        res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({
+            message: 'Opps Something Went Wrong',
+            error: error,
+          })
+    }
+}       

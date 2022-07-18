@@ -68,6 +68,8 @@ module.exports.checkout= async (req, res) => {
             const removediscount=totalprice-verifyCoupon.discount
             res.status(StatusCodes.OK).json({
                 totalprice:removediscount,
+                actualAmount:totalprice,
+                discount:`$${verifyCoupon.discount}`,
                 customerName:customerName,
             })
         }else if(totalprice>verifyCoupon.discounttype && itemcount>verifyCoupon.item){
